@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Logger</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net35</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="System.Xml">
+      <HintPath>../../../../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.2/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net" />
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.2/System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

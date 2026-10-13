@@ -1,0 +1,24 @@
+# Wine system.reg snippet: native mscoree ищет эти ключи.
+# Без NDP\v4\Full\Install=1 — диалог «install .NET Framework v4.0.30319».
+
+[Software\\Microsoft\\NET Framework Setup\\NDP\\v4] 0
+#time=0
+"Version"="4.0.30319"
+
+[Software\\Microsoft\\NET Framework Setup\\NDP\\v4\\Client] 0
+#time=0
+"Install"=dword:00000001
+"InstallPath"="C:\\windows\\Microsoft.NET\\Framework\\v4.0.30319\\"
+"TargetVersion"="4.0.0"
+"Version"="4.0.30319"
+
+[Software\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full] 0
+#time=0
+"Install"=dword:00000001
+"InstallPath"="C:\\windows\\Microsoft.NET\\Framework\\v4.0.30319\\"
+"TargetVersion"="4.0.0"
+"Version"="4.0.30319"
+
+[Software\\Microsoft\\.NETFramework\\Policy\\v4.0] 0
+#time=0
+"30319"="30319-30319"

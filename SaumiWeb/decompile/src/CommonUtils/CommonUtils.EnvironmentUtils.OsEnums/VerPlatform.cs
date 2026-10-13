@@ -1,0 +1,11 @@
+namespace CommonUtils.EnvironmentUtils.OsEnums;
+
+public enum VerPlatform
+{
+	VER_PLATFORM_WIN32s = 0,
+	VER_PLATFORM_WIN32_WINDOWS = 1,
+	VER_PLATFORM_WIN32_NT = 2,
+	VER_PLATFORM_WINCE = 3,
+	VER_PLATFORM_UNIX = 10,
+	VER_PLATFORM_MACOSX = 11
+}

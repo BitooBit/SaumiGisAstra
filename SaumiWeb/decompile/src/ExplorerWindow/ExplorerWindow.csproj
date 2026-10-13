@@ -1,0 +1,114 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>ExplorerWindow</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net35</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="actions/glyphs/copy.png" />
+    <None Remove="actions/glyphs/savecolumnssettings.png" />
+    <None Remove="actions/glyphs/editquerylarge.png" />
+    <None Remove="actions/glyphs/cut.png" />
+    <None Remove="actions/glyphs/pastelarge.png" />
+    <None Remove="actions/glyphs/addquery.png" />
+    <None Remove="actions/glyphs/refreshlarge.png" />
+    <None Remove="actions/glyphs/newlarge.png" />
+    <None Remove="actions/glyphs/delete.png" />
+    <None Remove="actions/glyphs/new.png" />
+    <None Remove="actions/glyphs/printlarge.png" />
+    <None Remove="actions/glyphs/cutlarge.png" />
+    <None Remove="actions/glyphs/copylarge.png" />
+    <None Remove="actions/glyphs/deletelarge.png" />
+    <None Remove="actions/glyphs/stop.png" />
+    <None Remove="actions/glyphs/showlarge.png" />
+    <None Remove="actions/glyphs/editquery.png" />
+    <None Remove="actions/glyphs/printfolder.png" />
+    <None Remove="actions/glyphs/paste.png" />
+    <None Remove="actions/glyphs/selectcolumns.png" />
+    <None Remove="actions/glyphs/addquerylarge.png" />
+    <None Remove="actions/glyphs/stoplarge.png" />
+    <None Remove="actions/glyphs/clearcolumnssettings.png" />
+    <None Remove="actions/glyphs/refresh.png" />
+    <None Remove="actions/glyphs/print.png" />
+    <None Remove="actions/glyphs/selectcolumnslarge.png" />
+    <None Remove="actions/glyphs/show.png" />
+    <None Remove="actions/glyphs/outerreference.png" />
+    <EmbeddedResource Include="actions/glyphs/copy.png" LogicalName="actions/glyphs/copy.png" />
+    <EmbeddedResource Include="actions/glyphs/savecolumnssettings.png" LogicalName="actions/glyphs/savecolumnssettings.png" />
+    <EmbeddedResource Include="actions/glyphs/editquerylarge.png" LogicalName="actions/glyphs/editquerylarge.png" />
+    <EmbeddedResource Include="actions/glyphs/cut.png" LogicalName="actions/glyphs/cut.png" />
+    <EmbeddedResource Include="actions/glyphs/pastelarge.png" LogicalName="actions/glyphs/pastelarge.png" />
+    <EmbeddedResource Include="actions/glyphs/addquery.png" LogicalName="actions/glyphs/addquery.png" />
+    <EmbeddedResource Include="actions/glyphs/refreshlarge.png" LogicalName="actions/glyphs/refreshlarge.png" />
+    <EmbeddedResource Include="actions/glyphs/newlarge.png" LogicalName="actions/glyphs/newlarge.png" />
+    <EmbeddedResource Include="actions/glyphs/delete.png" LogicalName="actions/glyphs/delete.png" />
+    <EmbeddedResource Include="actions/glyphs/new.png" LogicalName="actions/glyphs/new.png" />
+    <EmbeddedResource Include="actions/glyphs/printlarge.png" LogicalName="actions/glyphs/printlarge.png" />
+    <EmbeddedResource Include="actions/glyphs/cutlarge.png" LogicalName="actions/glyphs/cutlarge.png" />
+    <EmbeddedResource Include="actions/glyphs/copylarge.png" LogicalName="actions/glyphs/copylarge.png" />
+    <EmbeddedResource Include="actions/glyphs/deletelarge.png" LogicalName="actions/glyphs/deletelarge.png" />
+    <EmbeddedResource Include="actions/glyphs/stop.png" LogicalName="actions/glyphs/stop.png" />
+    <EmbeddedResource Include="actions/glyphs/showlarge.png" LogicalName="actions/glyphs/showlarge.png" />
+    <EmbeddedResource Include="actions/glyphs/editquery.png" LogicalName="actions/glyphs/editquery.png" />
+    <EmbeddedResource Include="actions/glyphs/printfolder.png" LogicalName="actions/glyphs/printfolder.png" />
+    <EmbeddedResource Include="actions/glyphs/paste.png" LogicalName="actions/glyphs/paste.png" />
+    <EmbeddedResource Include="actions/glyphs/selectcolumns.png" LogicalName="actions/glyphs/selectcolumns.png" />
+    <EmbeddedResource Include="actions/glyphs/addquerylarge.png" LogicalName="actions/glyphs/addquerylarge.png" />
+    <EmbeddedResource Include="actions/glyphs/stoplarge.png" LogicalName="actions/glyphs/stoplarge.png" />
+    <EmbeddedResource Include="actions/glyphs/clearcolumnssettings.png" LogicalName="actions/glyphs/clearcolumnssettings.png" />
+    <EmbeddedResource Include="actions/glyphs/refresh.png" LogicalName="actions/glyphs/refresh.png" />
+    <EmbeddedResource Include="actions/glyphs/print.png" LogicalName="actions/glyphs/print.png" />
+    <EmbeddedResource Include="actions/glyphs/selectcolumnslarge.png" LogicalName="actions/glyphs/selectcolumnslarge.png" />
+    <EmbeddedResource Include="actions/glyphs/show.png" LogicalName="actions/glyphs/show.png" />
+    <EmbeddedResource Include="actions/glyphs/outerreference.png" LogicalName="actions/glyphs/outerreference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="InflexGisComponent" />
+    <Reference Include="InflexCore">
+      <HintPath>../../bin/InflexCore.dll</HintPath>
+    </Reference>
+    <Reference Include="InflexUtils">
+      <HintPath>../../bin/InflexUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="InflexData">
+      <HintPath>../../bin/InflexData.dll</HintPath>
+    </Reference>
+    <Reference Include="ExplorerWindowBase">
+      <HintPath>../../bin/ExplorerWindowBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.2/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="InflexDataGridComponent">
+      <HintPath>../../bin/InflexDataGridComponent.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.1" />
+    <Reference Include="System.Data">
+      <HintPath>../../../../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.2/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>../../../../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.2/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="BLToolkit.3">
+      <HintPath>../../bin/BLToolkit.3.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net" />
+    <Reference Include="DevExpress.Data.v11.1" />
+    <Reference Include="GuiWpfShell" />
+    <Reference Include="CommonUtils">
+      <HintPath>../../bin/CommonUtils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

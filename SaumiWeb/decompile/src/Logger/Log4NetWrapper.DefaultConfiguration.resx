@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="DefaultConfigurationRes" xml:space="preserve"><value>&lt;log4net&gt;
+                                                        &lt;appender name="Console" type="log4net.Appender.ConsoleAppender"&gt;
+                                                            &lt;layout type="log4net.Layout.PatternLayout"&gt;
+                                                                &lt;conversionPattern value="%date [%thread] %-5level - %message%newline" /&gt;
+                                                            &lt;/layout&gt;
+                                                        &lt;/appender&gt;
+                                                     &lt;appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender"&gt;    
+	                                                    &lt;file value="{0}" /&gt;    
+	                                                    &lt;appendToFile value="false" /&gt;    
+	                                                    &lt;rollingStyle value="Size" /&gt;    
+	                                                    &lt;maxSizeRollBackups value="0" /&gt;    
+	                                                    &lt;maximumFileSize value="10MB" /&gt;    
+	                                                    &lt;staticLogFileName value="true" /&gt;    
+	                                                    &lt;layout type="log4net.Layout.PatternLayout"&gt;        
+	                                                    &lt;conversionPattern value="%date [%thread] %-5level - %message%newline" /&gt;    
+	                                                    &lt;/layout&gt;&lt;/appender&gt;
+
+
+                                                        &lt;root&gt;
+                                                            &lt;level value="DEBUG" /&gt;
+                                                            &lt;appender-ref ref="Console" /&gt;
+		                                                    &lt;appender-ref ref="RollingFileAppender" /&gt;
+	                                                    &lt;/root&gt;
+
+
+                                                        
+                                                    &lt;/log4net&gt;</value></data>
+  </root>

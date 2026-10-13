@@ -1,0 +1,4 @@
+LIBRARY SaumiGdiClip.dll
+
+EXPORTS
+_SaumiGdiClipDummy@0

@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>InflexCore</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net35</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="BLToolkit.3">
+      <HintPath>../../bin/BLToolkit.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>../../../../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.2/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="OracleUtils">
+      <HintPath>../../bin/OracleUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>../../../../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.2/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>../../bin/Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>../../../../../../../../../../usr/local/share/dotnet/shared/Microsoft.NETCore.App/10.0.2/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net" />
+    <Reference Include="PresentationCore" />
+  </ItemGroup>
+</Project>

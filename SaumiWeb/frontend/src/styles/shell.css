@@ -1,0 +1,173 @@
+.shell {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--saumi-bg);
+}
+
+.shell-appbar {
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  padding: 4px 6px;
+  background: linear-gradient(180deg, #dce8f6 0%, #c5d6ee 100%);
+  border-bottom: 1px solid var(--saumi-border-strong);
+  box-shadow: 0 1px 0 #fff inset;
+}
+
+.shell-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px 10px 2px 8px;
+  margin-right: 6px;
+  border-right: 1px solid var(--saumi-border);
+  min-width: 140px;
+}
+
+.shell-user__label {
+  font-size: 10px;
+  color: var(--saumi-muted);
+}
+
+.shell-user__name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--saumi-blue-dark);
+}
+
+.shell-btn {
+  position: relative;
+  min-width: 88px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--saumi-border);
+  border-radius: var(--saumi-radius);
+  background: linear-gradient(180deg, #f7fbff 0%, #d4e4f7 100%);
+  color: var(--saumi-text);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.shell-btn:hover,
+.shell-btn.is-open {
+  border-color: var(--saumi-blue);
+  background: linear-gradient(180deg, #fff 0%, #c5daf5 100%);
+}
+
+.shell-btn--saumi {
+  min-width: 110px;
+  color: #fff;
+  border-color: var(--saumi-blue-dark);
+  background: var(--saumi-titlebar);
+}
+
+.shell-spacer {
+  flex: 1;
+}
+
+.shell-logout {
+  height: 36px;
+}
+
+.shell-main {
+  flex: 1;
+  padding: 16px 18px;
+  font-size: 13px;
+  color: var(--saumi-muted);
+}
+
+.shell-main h1 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--saumi-blue-dark);
+}
+
+.shell-gaps {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  background: var(--saumi-bg-panel);
+  border: 1px solid var(--saumi-border);
+  font-size: 12px;
+  max-width: 720px;
+}
+
+.shell-gaps li {
+  margin: 4px 0;
+}
+
+.shell-popup {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  z-index: 40;
+  min-width: 260px;
+  max-height: min(70vh, 480px);
+  overflow: auto;
+  margin: 0;
+  padding: 2px 0;
+  list-style: none;
+  background: var(--saumi-surface);
+  border: 1px solid var(--saumi-border-strong);
+  box-shadow: var(--saumi-shadow);
+}
+
+.shell-popup--nested {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+}
+
+.shell-mi {
+  position: relative;
+}
+
+.shell-mi__btn {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 14px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  text-align: left;
+  color: var(--saumi-text);
+  cursor: pointer;
+}
+
+.shell-mi__btn:hover,
+.shell-mi.is-open > .shell-mi__btn {
+  background: var(--saumi-blue-light);
+}
+
+.shell-mi__btn:disabled {
+  color: var(--saumi-muted);
+  cursor: default;
+}
+
+.shell-mi--sep {
+  height: 1px;
+  margin: 4px 8px;
+  background: var(--saumi-border);
+}
+
+.shell-mi__arrow {
+  color: var(--saumi-muted);
+  font-size: 10px;
+}
+
+.shell-toast {
+  margin-top: 12px;
+  padding: 8px 10px;
+  border: 1px solid var(--saumi-border);
+  background: #fff8e6;
+  color: var(--saumi-text);
+  font-size: 12px;
+  max-width: 720px;
+}

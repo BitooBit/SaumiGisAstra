@@ -1,0 +1,181 @@
+Windows Registry Editor Version 5.00
+
+; Ассоциации файлов для SAUMI под Wine: SumatraPDF как обработчик PDF/образов.
+; Иконка = BMP-in-ICO 16x16 4bpp (не PNG/32bpp): SHGetFileInfo SYSICONINDEX+SMALLICON.
+; Не трогает mmp32.
+
+[HKEY_CLASSES_ROOT\.pdf]
+@="SumatraPDF.pdf"
+"Content Type"="application/pdf"
+"PerceivedType"="document"
+
+[HKEY_CLASSES_ROOT\.pdf\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\pdf.ico"
+
+[HKEY_CLASSES_ROOT\.tif]
+@="SumatraPDF.tif"
+"Content Type"="image/tiff"
+"PerceivedType"="image"
+
+[HKEY_CLASSES_ROOT\.tiff]
+@="SumatraPDF.tif"
+"Content Type"="image/tiff"
+"PerceivedType"="image"
+
+[HKEY_CLASSES_ROOT\.jpg]
+@="SumatraPDF.jpg"
+"Content Type"="image/jpeg"
+"PerceivedType"="image"
+
+[HKEY_CLASSES_ROOT\.jpeg]
+@="SumatraPDF.jpg"
+"Content Type"="image/jpeg"
+"PerceivedType"="image"
+
+[HKEY_CLASSES_ROOT\.png]
+@="SumatraPDF.png"
+"Content Type"="image/png"
+"PerceivedType"="image"
+
+[HKEY_CLASSES_ROOT\.bmp]
+@="SumatraPDF.bmp"
+"Content Type"="image/bmp"
+"PerceivedType"="image"
+
+[HKEY_CLASSES_ROOT\.gif]
+@="SumatraPDF.gif"
+"Content Type"="image/gif"
+"PerceivedType"="image"
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\application/pdf]
+"Extension"=".pdf"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.pdf]
+@="PDF Document"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.pdf\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\pdf.ico"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.pdf\shell]
+@="open"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.pdf\shell\open]
+@="Open"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.pdf\shell\open\command]
+@="\"C:\\SAUMI\\components\\SumatraPDF\\pdfopen.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\SumatraPDF.pdf\shell\print\command]
+@="\"C:\\SAUMI\\components\\SumatraPDF\\SumatraPDF.exe\" -print-to-default \"%1\""
+
+[HKEY_CLASSES_ROOT\SumatraPDF.tif]
+@="TIFF Image"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.tif\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\pdf.ico"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.tif\shell\open\command]
+@="\"C:\\SAUMI\\components\\SumatraPDF\\pdfopen.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\SumatraPDF.jpg]
+@="JPEG Image"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.jpg\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\pdf.ico"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.jpg\shell\open\command]
+@="\"C:\\SAUMI\\components\\SumatraPDF\\pdfopen.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\SumatraPDF.png]
+@="PNG Image"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.png\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\pdf.ico"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.png\shell\open\command]
+@="\"C:\\SAUMI\\components\\SumatraPDF\\pdfopen.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\SumatraPDF.bmp]
+@="Bitmap Image"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.bmp\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\pdf.ico"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.bmp\shell\open\command]
+@="\"C:\\SAUMI\\components\\SumatraPDF\\pdfopen.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\SumatraPDF.gif]
+@="GIF Image"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.gif\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\pdf.ico"
+
+[HKEY_CLASSES_ROOT\SumatraPDF.gif\shell\open\command]
+@="\"C:\\SAUMI\\components\\SumatraPDF\\pdfopen.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\Applications\SumatraPDF.exe]
+@="SumatraPDF"
+
+[HKEY_CLASSES_ROOT\Applications\SumatraPDF.exe\shell\open\command]
+@="\"C:\\SAUMI\\components\\SumatraPDF\\pdfopen.exe\" \"%1\""
+
+; Word/Excel: только DefaultIcon (открытие не перехватываем).
+[HKEY_CLASSES_ROOT\.doc]
+@="SAUMI.doc"
+
+[HKEY_CLASSES_ROOT\.doc\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\doc.ico"
+
+[HKEY_CLASSES_ROOT\SAUMI.doc]
+@="Word Document"
+
+[HKEY_CLASSES_ROOT\SAUMI.doc\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\doc.ico"
+
+[HKEY_CLASSES_ROOT\.docx]
+@="SAUMI.docx"
+
+[HKEY_CLASSES_ROOT\.docx\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\doc.ico"
+
+[HKEY_CLASSES_ROOT\SAUMI.docx]
+@="Word Document"
+
+[HKEY_CLASSES_ROOT\SAUMI.docx\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\doc.ico"
+
+[HKEY_CLASSES_ROOT\.rtf]
+@="SAUMI.rtf"
+
+[HKEY_CLASSES_ROOT\.rtf\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\doc.ico"
+
+[HKEY_CLASSES_ROOT\SAUMI.rtf]
+@="Rich Text"
+
+[HKEY_CLASSES_ROOT\SAUMI.rtf\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\doc.ico"
+
+[HKEY_CLASSES_ROOT\.xls]
+@="SAUMI.xls"
+
+[HKEY_CLASSES_ROOT\.xls\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\xls.ico"
+
+[HKEY_CLASSES_ROOT\SAUMI.xls]
+@="Excel Worksheet"
+
+[HKEY_CLASSES_ROOT\SAUMI.xls\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\xls.ico"
+
+[HKEY_CLASSES_ROOT\.xlsx]
+@="SAUMI.xlsx"
+
+[HKEY_CLASSES_ROOT\.xlsx\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\xls.ico"
+
+[HKEY_CLASSES_ROOT\SAUMI.xlsx]
+@="Excel Worksheet"
+
+[HKEY_CLASSES_ROOT\SAUMI.xlsx\DefaultIcon]
+@="C:\\SAUMI\\filetypes\\xls.ico"

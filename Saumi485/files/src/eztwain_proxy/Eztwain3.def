@@ -1,0 +1,27 @@
+LIBRARY Eztwain3.dll
+
+EXPORTS
+_DIB_DrawToDC@32
+_DIB_Free@4
+_DIB_Height@4
+_DIB_LoadFromFilename@4
+_DIB_Thumbnail@12
+_DIB_Width@4
+_DIB_WriteToFilename@8
+_TWAIN_AcquireNative@8
+_TWAIN_ApplicationLicense@12
+_TWAIN_BeginMultipageFile@4
+_TWAIN_CloseSource@0
+_TWAIN_DibWritePage@4
+_TWAIN_DisableSource@0
+_TWAIN_EnableSource@4
+_TWAIN_EndMultipageFile@0
+_TWAIN_GetNextSourceName@4
+_TWAIN_GetSourceList@0
+_TWAIN_IsAvailable@0
+_TWAIN_IsPdfAvailable@0
+_TWAIN_IsTiffAvailable@0
+_TWAIN_SelectImageSource@4
+_TWAIN_SetMultiTransfer@4
+_TWAIN_Shutdown@0
+_TWAIN_State@0

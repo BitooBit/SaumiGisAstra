@@ -1,0 +1,3 @@
+teambox/free-file-icons (MIT) — PDF / Word / Excel file-type icons
+https://github.com/teambox/free-file-icons
+LICENSE in app_icons/LICENSE

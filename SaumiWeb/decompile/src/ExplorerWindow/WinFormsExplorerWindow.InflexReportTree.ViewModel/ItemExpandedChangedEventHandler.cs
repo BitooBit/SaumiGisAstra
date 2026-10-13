@@ -1,0 +1,3 @@
+namespace WinFormsExplorerWindow.InflexReportTree.ViewModel;
+
+public delegate void ItemExpandedChangedEventHandler(IReportTreeItemViewModel sender);

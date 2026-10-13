@@ -1,0 +1,3 @@
+LIBRARY hp_sane.ds
+EXPORTS
+DS_Entry

@@ -1,0 +1,7 @@
+# SAUMI: один документ, без сессии и вкладок
+ReuseInstance = false
+UseTabs = false
+RememberOpenedFiles = false
+RestoreSession = false
+ShowStartPage = false
+LargeFonts = false

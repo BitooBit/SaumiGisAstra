@@ -1,0 +1,38 @@
+/* SAUMI-look: светлый UI, синие акценты (привычно пользователям exe) */
+:root {
+  --saumi-bg: #e8eef5;
+  --saumi-bg-panel: #f5f8fc;
+  --saumi-surface: #ffffff;
+  --saumi-border: #9eb6d4;
+  --saumi-border-strong: #5b87b8;
+  --saumi-blue: #2b6cb0;
+  --saumi-blue-dark: #1a4f8a;
+  --saumi-blue-light: #d6e4f5;
+  --saumi-titlebar: linear-gradient(180deg, #4a7eb8 0%, #2b5f96 100%);
+  --saumi-text: #1a2433;
+  --saumi-muted: #5a6b7d;
+  --saumi-danger: #b33a3a;
+  --saumi-font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --saumi-radius: 2px;
+  --saumi-shadow: 0 2px 8px rgba(26, 79, 138, 0.18);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--saumi-font);
+  color: var(--saumi-text);
+  background: var(--saumi-bg);
+  -webkit-font-smoothing: antialiased;
+}

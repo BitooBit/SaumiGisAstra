@@ -1,0 +1,35 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Excel.Application]
+@="SAUMI Excel Proxy"
+
+[HKEY_CLASSES_ROOT\Excel.Application\CLSID]
+@="{00024500-0000-0000-C000-000000000046}"
+
+[HKEY_CLASSES_ROOT\Excel.Application\CurVer]
+@="Excel.Application.16"
+
+[HKEY_CLASSES_ROOT\Excel.Application.16]
+@="SAUMI Excel Proxy"
+
+[HKEY_CLASSES_ROOT\Excel.Application.16\CLSID]
+@="{00024500-0000-0000-C000-000000000046}"
+
+[HKEY_CLASSES_ROOT\CLSID\{00024500-0000-0000-C000-000000000046}]
+@="SAUMI Excel Proxy"
+
+[HKEY_CLASSES_ROOT\CLSID\{00024500-0000-0000-C000-000000000046}\ProgID]
+@="Excel.Application.16"
+
+[HKEY_CLASSES_ROOT\CLSID\{00024500-0000-0000-C000-000000000046}\VersionIndependentProgID]
+@="Excel.Application"
+
+[HKEY_CLASSES_ROOT\CLSID\{00024500-0000-0000-C000-000000000046}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="SaumiExcelProxy.ExcelApplication"
+"Assembly"="SaumiExcelProxy, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v2.0.50727"
+"CodeBase"="file:///C:/SAUMI/SaumiExcelProxy.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{00024500-0000-0000-C000-000000000046}\Implemented Categories\{62C8FE65-4EBB-45e7-B440-6E39B2CDBF29}]

@@ -1,0 +1,32 @@
+services:
+  backend:
+    build: ./backend
+    container_name: saumiweb-api
+    environment:
+      APP_ENV: production
+      DEBUG: "false"
+      API_PREFIX: /api/v1
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-saumiweb-docker-dev-secret-change-me-32}
+      JWT_ALGORITHM: HS256
+      ACCESS_TOKEN_EXPIRE_MINUTES: "15"
+      REFRESH_TOKEN_EXPIRE_DAYS: "7"
+      # UI ходит через nginx на том же origin
+      CORS_ORIGINS: http://localhost:8080,http://127.0.0.1:8080
+      LOGIN_RATE_LIMIT_PER_MINUTE: "60"
+      USE_ORACLE: "0"
+    expose:
+      - "8000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: /api/v1
+        VITE_APP_TITLE: SAUMI
+    container_name: saumiweb-web
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
